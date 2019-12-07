@@ -1,0 +1,78 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.header, .navigation, main, aside {
+  border: 1px blue solid;
+}
+
+.container {
+  background-color: $background-color;
+}
+
+.row {
+  display: flex;
+}
+
+.after-row {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: $background-color;
+    opacity: 0.7;
+    bottom: 20px;
+    left: 40px;
+  }
+}
+
+.after-row--align-left {
+  &::after {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.header {
+  flex: 0 0 70%;
+  height: 60px;
+  position: fixed;
+  margin-left: 183px;
+  background-color: $page-color;
+  width: 100%;
+  min-width: 700px;
+  max-width: 1152px;
+}
+
+.navigation {
+  flex: 0 0 30%;
+  height: 60px;
+  position: fixed;
+}
+
+.main {
+  margin-top: 60px;
+  margin-left: 183px;
+  flex: 0 0 90%;
+}
+
+.aside {
+  flex: 0 0 10%;
+  margin-top: 60px;
+  min-width: 183px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  background-color: $black-color;
+}
+
+.page {
+  background-color: $page-color;
+  margin: 40px;
+  border-radius: 10px;
+  padding: 40px;
+  min-width: 600px;
+  max-width: 1024px;
+}
