@@ -1,7 +1,7 @@
 // TITLE
 
 .title {
-  flex: 0 0 100%;
+  width: 100%;
 }
 
 .title--black {
@@ -21,7 +21,7 @@
 }
 
 .title-main{
-  padding: 0 15px;
+  padding: 5px 15px;
   font-size: 18px;
   color: #a6a6a6;
   font-family: $main-font;
@@ -149,11 +149,6 @@
 
 .list-number {
   text-align: center;
-}
-
-.list-menu--align-left {
-  width: 100%;
-  padding-left: 0;
 }
 
 .list-icon {
@@ -399,4 +394,22 @@
 .input-wrapper__checkbox {
   margin: 0 10px;
   padding: 10px;
+}
+
+// MEDIA
+
+@media(max-width: 767px) {
+  @include grid('sm');
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
 }
