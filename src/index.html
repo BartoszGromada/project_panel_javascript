@@ -12,47 +12,455 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <nav class="navigation title title--black col-xl-2">
+  <div class="container-app">
+    <aside class="sidebar col-xs-2 col-sm-1 col-md-2">
+      <div class="title row">
         <h1 class="title-main">title-main</h1>
-      </nav>
-      <header class="header col-xl-10">
-        <ul class="list list-icon">
-          <li class="list__element list__element--horizontal list__element--before list__element--large"><a class="link--list" href="#"><i class="icon-wallet icon icon--large"></i>1500 $</a></li>
-          <li class="list__element list__element--horizontal list__element--before list__element--large"><a class="link--list" href="#"><i class="icon-notification icon icon--large icon--after"></i></a></li>
-          <li class="list__element list__element--horizontal list__element--before list__element--large"><a class="link--list" href="#"><i class="icon-profile icon icon--large"></i>Leonardo Di Caprio</a></li>
-          <li class="list__element list__element--horizontal list__element--before list__element--large"><a class="link--list" href="#"><i class="icon-quit icon icon--large"></i></a></li>
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="row after-row">
+        <ul class="list list-menu">
+          <li class="list__element list__element--background"><a href="#" class="link--list"><i
+                class="icon-general icon"></i>General</a></li>
+          <li class="list__element list__element--background"><a href="#" class="link--list"><i
+                class="icon-details icon"></i>Details</a></li>
+          <li class="list__element list__element--background"><a href="#" class="link--list"><i
+                class="icon-links icon"></i>Links</a></li>
+          <li class="list__element list__element--background"><a href="#" class="link--list"><i
+                class="icon-banners icon"></i>Banners</a></li>
+          <li class="list__element list__element--background"><a href="#" class="link--list"><i
+                class="icon-personaldata icon"></i>Personal data</a></li>
+          <li class="list__element list__element--background"><a href="#" class="link--list"><i
+                class="icon-payout icon"></i>Payout</a></li>
+          <li class="list__element list__element--background"><a href="#" class="link--list"><i
+                class="icon-postback icon"></i>Postback</a></li>
         </ul>
-      </header>
-    </div>
-    <div class="row">
-      <aside class="aside col-xl-2">
-        <div class="row after-row">
-          <ul class="list list-menu">
-            <li class="list__element list__element--background"><a href="#" class="link--list"><i class="icon-general icon"></i>General</a></li>
-            <li class="list__element list__element--background"><a href="#" class="link--list"><i class="icon-details icon"></i>Details</a></li>
-            <li class="list__element list__element--background"><a href="#" class="link--list"><i class="icon-links icon"></i>Links</a></li>
-            <li class="list__element list__element--background"><a href="#" class="link--list"><i class="icon-banners icon"></i>Banners</a></li>
-            <li class="list__element list__element--background"><a href="#" class="link--list"><i class="icon-personaldata icon"></i>Personal data</a></li>
-            <li class="list__element list__element--background"><a href="#" class="link--list"><i class="icon-payout icon"></i>Payout</a></li>
-            <li class="list__element list__element--background"><a href="#" class="link--list"><i class="icon-postback icon"></i>Postback</a></li>
-          </ul>
-        </div>
-      </aside>
-      <main class="main col-xl-10">
-        <div class="page">www</div>
-        <div class="page">ddd</div>
-        <div class="page">fff</div>
-        <div class="page">gggg</div>
-        <div class="page">gggg</div>
-        <div class="page">gggg</div>
-        <div class="page">gggg</div>
-        <div class="page">gggg</div>
-        <div class="page">gggg</div>
-        <div class="page">gggg</div>
-      </main>
-    </div>
+      </div>
+    </aside>
+    <main class="container-main col-xs-10 col-sm-11 col-md-10">
+      <nav class="navigation">
+        <ul class="list list-icon">
+          <li class="list__element list__element--horizontal list__element--before"><a
+              class="link--list" href="#"><i class="icon-wallet icon"></i>1500 $</a></li>
+          <li class="list__element list__element--horizontal list__element--before"><a
+              class="link--list" href="#"><i class="icon-notification icon icon--after"></i></a></li>
+          <li class="list__element list__element--horizontal list__element--before"><a
+              class="link--list" href="#"><i class="icon-profile icon"></i>Leonardo Di Caprio</a></li>
+          <li class="list__element list__element--horizontal list__element--before"><a
+              class="link--list" href="#"><i class="icon-quit icon"></i></a></li>
+        </ul>
+      </nav>
+      <div class="container-section">
+        <section class="page">
+          <div class="row">
+            <header class="title title--after">
+              <h2 class="title-page">general statistic</h2>
+            </header>
+          </div>
+          <div class="row row--after">
+            <form class="input-wrapper input-wrapper--center">
+              <div class="add-border">
+                <input name="date" type="date" class=" input-wrapper__input  input-wrapper__input--icon">
+                <input name="date" type="date" class=" input-wrapper__input  input-wrapper__input--icon">
+                <i class="icon-calendar icon"></i>
+              </div>
+              <i class="icon-refresh icon icon--veritical icon--background-alternative"></i>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <table class="table table--center table--no-top-border">
+                <tbody class="table-body">
+                  <tr class="table-body__row">
+                    <td class="table-body__cell title-section">Home page</td>
+                    <td class="table-body__cell table-body__cell--right paragraph">123</td>
+                  </tr>
+                  <tr class="table-body__row">
+                    <td class="table-body__cell title-section">Currently offer</td>
+                    <td class="table-body__cell table-body__cell--right paragraph">456</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <table class="table table--center table--no-top-border">
+                <tbody class="table-body">
+                  <tr class="table-body__row">
+                    <td class="table-body__cell title-section">Home page</td>
+                    <td class="table-body__cell table-body__cell--right paragraph">123</td>
+                  </tr>
+                  <tr class="table-body__row">
+                    <td class="table-body__cell title-section">Currently offer</td>
+                    <td class="table-body__cell table-body__cell--right paragraph">456</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="title">
+              <h3 class="title-section">Earnings chart</h3>
+            </div>
+          </div>
+          <div class="row">
+            <canvas id="myChart"></canvas>
+          </div>
+        </section>
+        <section class="page">
+          <div class="row">
+            <header class="title title--after">
+              <h2 class="title-page">links</h2>
+            </header>
+          </div>
+          <div class="row">
+            <div class="button-wrapper">
+              <p class="button button--alternative">+ add New</p>
+            </div>
+          </div>
+          <div class="row">
+            <table class="table table--center">
+              <tbody class="table-body">
+                <tr class="table-body__row">
+                  <td class="table-body__cell title-section">Home page</td>
+                  <td class="table-body__cell"><a class="link" href="#">http://www.homepage.com</a></td>
+                  <td class="table-body__cell table-body__cell--right"><i
+                      class="icon-links icon icon--hover icon--small icon--blue"></i><i
+                      class="icon-trash icon icon--hover icon--small icon--blue"></i></td>
+                </tr>
+                <tr class="table-body__row">
+                  <td class="table-body__cell title-section">Currently offer</td>
+                  <td class="table-body__cell"><a class="link" href="#">http://currently.com</a></td>
+                  <td class="table-body__cell table-body__cell--right"><i
+                      class="icon-links icon icon--hover icon--small icon--blue"></i><i
+                      class="icon-trash icon icon--hover icon--small icon--blue"></i></td>
+                </tr>
+                <tr class="table-body__row">
+                  <td class="table-body__cell title-section">Blurpix</td>
+                  <td class="table-body__cell"><a class="link" href="#">http://blurpix.com</a></td>
+                  <td class="table-body__cell table-body__cell--right"><i
+                      class="icon-links icon icon--hover icon--small icon--blue"></i><i
+                      class="icon-trash icon icon--hover icon--small icon--blue"></i></td>
+                </tr>
+                <tr class="table-body__row">
+                  <td class="table-body__cell title-section">Your Site</td>
+                  <td class="table-body__cell"><a class="link" href="#">http://yoursite.com</a></td>
+                  <td class="table-body__cell table-body__cell--right"><i
+                      class="icon-links icon icon--hover icon--small icon--blue"></i><i
+                      class="icon-trash icon icon--hover icon--small icon--blue"></i></td>
+                </tr>
+                <tr class="table-body__row">
+                  <td class="table-body__cell title-section">Your Site</td>
+                  <td class="table-body__cell"><a class="link" href="#">http://yoursite.com</a></td>
+                  <td class="table-body__cell table-body__cell--right"><i
+                      class="icon-links icon icon--hover icon--small icon--blue"></i><i
+                      class="icon-trash icon icon--hover icon--small icon--blue"></i></td>
+                </tr>
+                <tr class="table-body__row">
+                  <td class="table-body__cell title-section">Your Site</td>
+                  <td class="table-body__cell"><a class="link" href="#">http://yoursite.com</a></td>
+                  <td class="table-body__cell table-body__cell--right"><i
+                      class="icon-links icon icon--hover icon--small icon--blue"></i><i
+                      class="icon-trash icon icon--hover icon--small icon--blue"></i></td>
+                </tr>
+                <tr class="table-body__row">
+                  <td class="table-body__cell title-section">Your Site</td>
+                  <td class="table-body__cell"><a class="link" href="#">http://yoursite.com</a></td>
+                  <td class="table-body__cell table-body__cell--right"><i
+                      class="icon-links icon icon--hover icon--small icon--blue"></i><i
+                      class="icon-trash icon icon--hover icon--small icon--blue"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="button-wrapper">
+              <p class="button button--alternative">+ add New</p>
+            </div>
+          </div>
+        </section>
+        <section class="page">
+          <div class="row">
+            <header class="title title--after">
+              <h2 class="title-page">new postsback</h2>
+            </header>
+          </div>
+        </section>
+        <section class="page">
+          <div class="row">
+            <header class="title title--after">
+              <h2 class="title-page">payount history </h2>
+            </header>
+          </div>
+          <div class="row row--after">
+            <form class="input-wrapper input-wrapper--center">
+              <div class="add-border">
+                <input name="date" type="date" class=" input-wrapper__input  input-wrapper__input--icon">
+                <input name="date" type="date" class=" input-wrapper__input  input-wrapper__input--icon">
+                <i class="icon-calendar icon"></i>
+              </div>
+              <i class="icon-refresh icon icon--veritical icon--background-alternative"></i>
+            </form>
+          </div>
+          <div class="row">
+            <table class="table table--center table--no-top-border">
+              <thead class="table-head">
+                <tr class="table-head__row">
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr class="table-body__row table-body__row--pointer">
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                </tr>
+                <tr class="table-body__row table-body__row--pointer">
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                </tr>
+                <tr class="table-body__row table-body__row--pointer">
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <ul class="list list-number">
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list" href="#"><i
+                    class="icon-arrow-left icon icon--small"></i></a></li>
+              <li class="list__element list__element--horizontal list__element--hover list__element--active"><a
+                  class="link--list" href="#">1</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">2</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">3</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">4</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">5</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">6</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">7</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">8</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">9</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list" href="#"><i
+                    class="icon-arrow-right icon icon--small"></i></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="page">
+          <div class="row">
+            <header class="title title--after">
+              <h2 class="title-page">detail statistic</h2>
+            </header>
+          </div>
+          <div class="row row--after">
+            <form class="input-wrapper input-wrapper--center">
+              <div class="add-border">
+                <input name="date" type="date" class=" input-wrapper__input  input-wrapper__input--icon">
+                <input name="date" type="date" class=" input-wrapper__input  input-wrapper__input--icon">
+                <i class="icon-calendar icon"></i>
+              </div>
+              <i class="icon-refresh icon icon--veritical icon--background-alternative"></i>
+            </form>
+          </div>
+          <div class="row">
+            <table class="table table--center table--no-top-border">
+              <thead class="table-head">
+                <tr class="table-head__row">
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                  <th class="table-head__cell title-section">
+                    <p class="table-head__cell--filter">column name<i
+                        class="icon-arrow-up table-head__icon icon icon--small"></i></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr class="table-body__row table-body__row--pointer">
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                </tr>
+                <tr class="table-body__row table-body__row--pointer">
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                </tr>
+                <tr class="table-body__row table-body__row--pointer">
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                  <td class="table-body__cell paragraph">123</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <ul class="list list-number">
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list" href="#"><i
+                    class="icon-arrow-left icon icon--small"></i></a></li>
+              <li class="list__element list__element--horizontal list__element--hover list__element--active"><a
+                  class="link--list" href="#">1</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">2</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">3</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">4</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">5</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">6</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">7</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">8</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list"
+                  href="#">9</a></li>
+              <li class="list__element list__element--horizontal list__element--hover"><a class="link--list" href="#"><i
+                    class="icon-arrow-right icon icon--small"></i></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="page">
+          <div class="row">
+            <header class="title title--after">
+              <h2 class="title-page">personal data</h2>
+            </header>
+          </div>
+          <form class="input-wrapper">
+            <ul class="list">
+              <label for="input" class="input-wrapper__label">single description</label>
+              <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              <label for="input" class="input-wrapper__label">single description</label>
+              <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              <div>
+                <label for="input" class="input-wrapper__label">single description</label>
+                <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              </div>
+              <div>
+                <label for="input" class="input-wrapper__label">single description</label>
+                <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              </div>
+              <div>
+                <label for="input" class="input-wrapper__label">single description</label>
+                <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              </div>
+              <div>
+                <label for="input" class="input-wrapper__label">single description</label>
+                <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              </div>
+
+              <div>
+                <label for="input" class="input-wrapper__label">single description</label>
+                <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              </div>
+
+              <div>
+                <label for="input" class="input-wrapper__label">single description</label>
+                <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              </div>
+
+              <div>
+                <label for="input" class="input-wrapper__label">single description</label>
+                <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              </div>
+
+              <div>
+                <label for="input" class="input-wrapper__label">single description</label>
+                <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+              </div>
+
+          </form>
+        </section>
+      </div>
+    </main>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

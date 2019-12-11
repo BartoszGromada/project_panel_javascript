@@ -9,7 +9,7 @@ $background-color: #e3e3e3;
 $c-color: #f5f5f2;
 $alternative-link-color: #f58220;
 $button-3-color: #ffa200;
-$f-color: #04ae00;
+$alternative-tab-color: #04ae00;
 $g-color: #74b67a;
 $h-color: #96cc9b;
 $i-color: #de5252;
@@ -18,8 +18,11 @@ $tab-color: #56819f;
 $page-color: #ffffff;
 $black-color: #000000;
 
-/* Font sizes */
+/* sizes */
 $paragraph-font-size: 16px;
+$sidebar-width: 250px;
+$sidebar-tablet-width: $sidebar-width * 0.66;
+$topbar-height: 60px;
 
 /* Fonts */
 $brand-font: "Open Sans", Helvetica, Arial;
