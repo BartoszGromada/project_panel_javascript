@@ -28,7 +28,6 @@
   align-items: center;
   border-bottom: 2px solid $background-color;
   transition: 1s linear;
-  min-width: 300px;
 }
 
 .container-section {
@@ -77,15 +76,6 @@
 
 @media (max-width: 568px) {
   @include grid("xs");
-
-  .container-section {
-    order: -1;
-    height: calc(100vh - #{$topbar-height * 3});
-  }
-
-  .navigation {
-    height: $topbar-height * 3;
-  }
 
   .page {
     padding: 10px;

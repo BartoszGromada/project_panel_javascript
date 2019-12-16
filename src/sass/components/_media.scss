@@ -16,12 +16,12 @@
   .icon--veritical {
     margin: 10px auto;
     text-align: center;
+    display: block;
   }
   
   .list-icon {
     padding: 0;
-    font-size: 10px;
-    text-align: center;
+    text-align: left;
   }
 
   .list-number {
@@ -32,22 +32,8 @@
     margin: 0 60% 0 30%;
   }
 
-  .icon--landscape {
-    display: block;
-  }
-
-  .icon--after {
-    &::after {
-      right: 30px;
-    }
-  }
-
   .list__element--hover, .list__element--active {
     padding: 0;
-  }
-
-  .list__element--horizontal {
-    display: block;
   }
 
   .table {
