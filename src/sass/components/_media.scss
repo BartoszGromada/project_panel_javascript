@@ -1,9 +1,5 @@
 @media (max-width: 568px) {
 
-  .page {
-    padding: 10px;
-  }
-
   .title {
     margin: 5px;
   }
@@ -18,7 +14,6 @@
   }
 
   .icon--veritical {
-    display: block;
     margin: 10px auto;
     text-align: center;
   }
@@ -26,6 +21,7 @@
   .list-icon {
     padding: 0;
     font-size: 10px;
+    text-align: center;
   }
 
   .list-number {
@@ -36,8 +32,22 @@
     margin: 0 60% 0 30%;
   }
 
+  .icon--landscape {
+    display: block;
+  }
+
+  .icon--after {
+    &::after {
+      right: 30px;
+    }
+  }
+
   .list__element--hover, .list__element--active {
     padding: 0;
+  }
+
+  .list__element--horizontal {
+    display: block;
   }
 
   .table {
@@ -62,5 +72,3 @@
     width: 100%;
   }
 }
-
-

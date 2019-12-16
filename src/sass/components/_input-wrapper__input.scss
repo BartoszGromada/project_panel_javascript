@@ -12,16 +12,15 @@
   }
 }
 
-.input-wrapper__input--icon {
+.input-wrapper__input--data-icon {
   appearance: none;
-  background-color: #ffffff;
   border: 0;
   padding: 10px;
   font-size: 14px;
   display: inline-block;
   width: 150px;
   border-radius: 0;
-  background-image: url('../../images/icons/calendar.svg');
+  background-image: url("../../images/icons/calendar.svg");
   background-size: 15px auto;
   background-repeat: no-repeat;
   background-position: right 28px center;
@@ -30,4 +29,15 @@
   &:hover {
     border: 0;
   }
+}
+
+.input-wrapper__input--password-icon {
+  appearance: none;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 0;
+  background-image: url("../../images/icons/password.svg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  background-position: left 5px center;
 }

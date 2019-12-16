@@ -5,10 +5,12 @@
 .container-app {
   display: flex;
   height: 100vh;
+  transition: 1s linear;
 }
 
 .sidebar {
   background-color: $black-color;
+  transition: 1s linear;
 }
 
 .container-main {
@@ -16,21 +18,24 @@
   flex-direction: column;
   background-color: $background-color;
   z-index: 0;
+  transition: 1s linear;
 }
 
 .navigation {
   background-color: $page-color;
   height: $topbar-height;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   border-bottom: 2px solid $background-color;
+  transition: 1s linear;
+  min-width: 300px;
 }
 
 .container-section {
   height: calc(100vh - #{$topbar-height});
   overflow-y: scroll;
   padding: 1em;
+  transition: 1s linear;
 }
 
 .page {
@@ -40,6 +45,7 @@
   padding: 20px;
   opacity: 0;
   transition: 1s linear;
+  min-width: 220px;
 
   &.active {
     opacity: 100;
@@ -72,37 +78,70 @@
 @media (max-width: 568px) {
   @include grid("xs");
 
+  .container-section {
+    order: -1;
+    height: calc(100vh - #{$topbar-height * 3});
+  }
+
+  .navigation {
+    height: $topbar-height * 3;
+  }
+
+  .page {
+    padding: 10px;
+  }
+
   .sidebar--change {
-    flex: 0 0 50%;
-    max-width: 50%;
-    position: absolute;
-    z-index: 999;
-    height: 100vh;
+    flex: 0 0 45%;
+    max-width: 45%;
+    transition: 1s linear;
     .title-main {
+      transition: 1s linear;
       margin: 10px 0 20px 6px;
       padding: 0;
     }
     .fas--background::before {
+      transition: 1s linear;
       margin: 0 15px 0 10px;
     }
     .icon--menu {
+      transition: 1s linear;
       margin: 0 15px 0 10px;
     }
   }
 
   .container-main--change {
-    flex: 0 100%;
-    max-width: 100%;
+    flex: 0 55%;
+    max-width: 55%;
   }
 }
 
-@media (min-width: 569px) {
+@media (min-width: 569px) and (max-width: 766px) {
   @include grid("sm");
+
+  .sidebar--change {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .container-main--change {
+    flex: 0 70%;
+    max-width: 70%;
+  }
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   @include grid("md");
+
+  .sidebar--change {
+    flex: 0 0 7%;
+    max-width: 7%;
+  }
+
+  .container-main--change {
+    flex: 0 93%;
+    max-width: 93%;
+  }
 }
 
 @media (min-width: 992px) {

@@ -68,6 +68,7 @@ const app = {
 
     thisApp.newActiveSection.classList.remove(className.deactive);
     thisApp.newActiveSection.classList.add(className.active);
+    thisApp.changeMenuAfterClickLink();
   },
   changeMenu: function() {
     const thisApp = this;
@@ -77,6 +78,15 @@ const app = {
 
     thisApp.sidebar.classList.toggle('sidebar--change');
     thisApp.container.classList.toggle('container-main--change');
+  },
+  changeMenuAfterClickLink: function() {
+    const thisApp = this;
+
+    thisApp.sidebar = document.querySelector(select.sidebar);
+    thisApp.container = document.querySelector(select.main);
+
+    thisApp.sidebar.classList.remove('sidebar--change');
+    thisApp.container.classList.remove('container-main--change');
   },
   init: function () {
     const thisApp = this;
