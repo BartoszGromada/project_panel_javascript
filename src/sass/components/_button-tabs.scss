@@ -1,0 +1,38 @@
+.button-tabs {
+  background-color: $background-color;
+  position: relative;
+  font-size: 14px;
+  color: $button-color;
+  padding: 8px;
+  font-weight: 700;
+  height: 30px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  display: inline-block;
+  &:hover {
+    background-color: $page-color;
+    border: 2px solid $background-color;
+    padding: 6px;
+  }
+  &::after {
+    @include after();
+    width: 10px;
+    height: 10px;
+    background: $tab-color;
+    top: 12px;
+    left: 10px;
+    border-radius: 50%;
+  }
+  &:hover::after {
+    background: $alternative-tab-color;
+    top: 10px;
+    left: 8px;
+  }
+}
+
+.button-tabs--alternative {
+  &::after {
+    background: $alternative-link-color;
+  }
+}

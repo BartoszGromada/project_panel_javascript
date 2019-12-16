@@ -1,0 +1,48 @@
+.list__element {
+  padding: 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list__element--large {
+  padding: 24px 10px 4px 10px;
+}
+
+.list__element--background {
+  position: relative;
+  &:hover {
+    background-color: $background-color;
+  }
+  &:hover::after {
+    @include after();
+    left: 0px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: $alternative-link-color;
+  }
+}
+
+.list__element--horizontal {
+  display: inline;
+}
+
+.list__element--hover:hover {
+  background-color: #e3e3e3;
+}
+
+.list__element--active {
+  background: #e3e3e3;
+}
+
+.list__element--before {
+  position: relative;
+  &::before {
+    @include after();
+    height: 100%;
+    width: 2px;
+    background-color: $background-color;
+    top: 0;
+    left: 0;
+  }
+}

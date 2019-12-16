@@ -1,0 +1,11 @@
+.table-body__row {
+  &:hover {
+    background-color: $background-color;
+  }
+  &:hover .icon--hover {
+    visibility: visible;
+  }
+}
+.table-body__row--pointer {
+  cursor: pointer;
+}

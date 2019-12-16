@@ -1,0 +1,11 @@
+.table-body__cell {
+  vertical-align: middle;
+  height: 50px;
+  border-bottom: 1px solid $background-color;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+.table-body__cell--right {
+  text-align: right;
+}

@@ -1,0 +1,33 @@
+.input-wrapper__input {
+  padding: 10px;
+  margin: 0 0 0 20px;
+  border: 1px solid $background-color;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: 0;
+  &:focus,
+  &:active,
+  &:hover {
+    border: 1px solid $button-color;
+  }
+}
+
+.input-wrapper__input--icon {
+  appearance: none;
+  background-color: #ffffff;
+  border: 0;
+  padding: 10px;
+  font-size: 14px;
+  display: inline-block;
+  width: 150px;
+  border-radius: 0;
+  background-image: url('../../images/icons/calendar.svg');
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  background-position: right 28px center;
+  &:focus,
+  &:active,
+  &:hover {
+    border: 0;
+  }
+}

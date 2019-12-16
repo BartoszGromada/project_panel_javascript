@@ -1,0 +1,15 @@
+.input-wrapper {
+  margin: 20px auto;
+}
+
+.input-wrapper--after {
+  position: relative;
+  margin-bottom: 60px;
+  &::after {
+    @include after();
+    width: 100%;
+    height: 0.5px;
+    background-color: $background-color;
+    bottom: -30px;
+  }
+}

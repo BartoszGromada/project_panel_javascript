@@ -1,0 +1,18 @@
+.title {
+  margin: 10px;
+  width: 100%;
+}
+
+.title--black {
+  background: black;
+}
+
+.title--after {
+  position: relative;
+  &::after {
+    @include after();
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+  }
+}

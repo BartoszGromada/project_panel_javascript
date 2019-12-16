@@ -1,0 +1,30 @@
+.link {
+  font-size: 14px;
+  color: #56819f;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-decoration: none;
+  &:hover {
+    color: $alternative-link-color;
+  }
+}
+
+.link--list {
+  font-size: 16px;
+  line-height: 17px;
+  color: #a6a6a6;
+  font-family: "Roboto";
+  text-decoration: none;
+  &:hover {
+    color: $alternative-link-color;
+  }
+}
+
+.link--large {
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.link--orange {
+  color: $alternative-link-color;
+}

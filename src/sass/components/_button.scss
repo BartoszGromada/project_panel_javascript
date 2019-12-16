@@ -1,0 +1,35 @@
+.button {
+  background-color: $button-color;
+  color: $black-color;
+  border-radius: 3px;
+  padding: 15px;
+  min-width: 100px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px;
+  text-align: center;
+  color: $page-color;
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+.button--grey {
+  background-color: $button-2-color;
+}
+
+.button--alternative {
+  background-color: $alternative-link-color;
+}
+
+.button--orange {
+  background-color: $button-3-color;
+}
+
+.button--large {
+  background-color: $background-color;
+  min-width: 250px;
+  width: 300px;
+}
