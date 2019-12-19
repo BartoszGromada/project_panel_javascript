@@ -1,28 +1,21 @@
-.icon {
-  margin: 0 10px;
-}
-
-.icon--menu {
+.icons--menu {
   margin: 0 25px 0 10px;
 }
 
-.icon--veritical {
+.icons--veritical {
   display: inline-block;
 }
 
-.icon--small::before {
+.icons--small::before {
   font-size: 12px;
 }
 
-.icon--large::before {
-  font-size: 30px;
-}
-
-.icon--hover {
+.icons--hover {
   visibility: hidden;
+  margin: 0 10px
 }
 
-.icon--after {
+.icons--after {
   position: relative;
   &::after {
     @include after();
@@ -35,7 +28,7 @@
   }
 }
 
-.icon--blue {
+.icons--blue {
   &::before {
     color: $tab-color;
   }
@@ -44,12 +37,13 @@
   }
 }
 
-.icon--background-alternative {
-  padding: 10px;
+.icons--background-alternative {
+  font-size: 14px;
+  padding: 13px 13px 14px 13px;
   background-color: $alternative-link-color;
   color: $page-color;
   &:hover {
-    padding: 9px;
+    padding: 12px 12px 13px 12px;
     background-color: $page-color;
     color: $alternative-link-color;
     border: 1px solid $alternative-link-color;
@@ -58,5 +52,5 @@
 
 .fas--background::before {
   color: $background-color;
-  margin: 0 26px 0 0;
+  margin: 0 25px 0 0;
 }

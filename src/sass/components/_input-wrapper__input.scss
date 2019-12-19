@@ -1,8 +1,8 @@
 .input-wrapper__input {
   padding: 10px;
-  margin: 0 0 0 20px;
   border: 1px solid $background-color;
   border-radius: 3px;
+  width: 300px;
   cursor: pointer;
   outline: 0;
   &:focus,
@@ -12,10 +12,9 @@
   }
 }
 
-.input-wrapper__input--data-icon {
+.input-wrapper__input--date {
   appearance: none;
   border: 0;
-  padding: 10px;
   font-size: 14px;
   display: inline-block;
   width: 150px;
@@ -31,9 +30,9 @@
   }
 }
 
-.input-wrapper__input--password-icon {
+.input-wrapper__input--password {
   appearance: none;
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
   display: inline-block;
   border-radius: 0;
   background-image: url("../../images/icons/password.svg");
