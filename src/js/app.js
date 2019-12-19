@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 
 import {select, className} from './settings.js';
+import { utils } from './utils.js';
 
 const app = {
   initChart: function () {
@@ -88,10 +89,29 @@ const app = {
     thisApp.sidebar.classList.remove('sidebar--change');
     thisApp.container.classList.remove('container-main--change');
   },
+  initData() {
+    const thisApp = this;
+
+    thisApp.dataInputsFrom = document.querySelectorAll('.input-wrapper__input-date-from');
+    thisApp.dataInputsTo = document.querySelectorAll('.input-wrapper__input-date-to');
+    thisApp.today = new Date();
+
+    for (let input of thisApp.dataInputsFrom) {
+      thisApp.yesterday = utils.minusDays(thisApp.today, 1);
+      thisApp.yesterdayString = thisApp.yesterday.toISOString().slice(0, 10);
+      input.value = thisApp.yesterdayString;
+    }
+
+    for (let input of thisApp.dataInputsTo) {
+      thisApp.todayString = thisApp.today.toISOString().slice(0, 10);
+      input.value = thisApp.todayString;
+    }
+  },
   init: function () {
     const thisApp = this;
 
     thisApp.initChart();
+    thisApp.initData();
     thisApp.initListener();
 
   },

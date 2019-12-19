@@ -1,9 +1,10 @@
 .input-wrapper__label {
-  padding: 5px 10px;
   color: $button-color;
   font-weight: 700;
   letter-spacing: 1px;
-  margin: 20px 0;
+  min-width: 150px;
+  text-align: left;
+  padding: 10px 0;
 }
 
 .input-wrapper__label--veritical {

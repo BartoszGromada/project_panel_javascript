@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: column;
   background-color: $background-color;
-  z-index: 0;
   transition: 1s linear;
 }
 
@@ -41,7 +40,6 @@
   background: $page-color;
   border-radius: 4px;
   margin: 1em;
-  padding: 20px;
   opacity: 0;
   transition: 1s linear;
   min-width: 220px;
@@ -74,7 +72,7 @@
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 566px) {
   @include grid("xs");
 
   .page {
@@ -84,20 +82,6 @@
   .sidebar--change {
     flex: 0 0 45%;
     max-width: 45%;
-    transition: 1s linear;
-    .title-main {
-      transition: 1s linear;
-      margin: 10px 0 20px 6px;
-      padding: 0;
-    }
-    .fas--background::before {
-      transition: 1s linear;
-      margin: 0 15px 0 10px;
-    }
-    .icon--menu {
-      transition: 1s linear;
-      margin: 0 15px 0 10px;
-    }
   }
 
   .container-main--change {
@@ -106,7 +90,7 @@
   }
 }
 
-@media (min-width: 569px) and (max-width: 766px) {
+@media (min-width: 567px) and (max-width: 766px) {
   @include grid("sm");
 
   .sidebar--change {
