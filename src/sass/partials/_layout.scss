@@ -11,6 +11,7 @@
 .sidebar {
   background-color: $black-color;
   transition: 1s linear;
+  overflow: hidden;
 }
 
 .container-main {
@@ -43,7 +44,7 @@
   opacity: 0;
   transition: 1s linear;
   min-width: 220px;
-
+  
   &.active {
     opacity: 100;
   }
@@ -74,10 +75,6 @@
 
 @media (max-width: 566px) {
   @include grid("xs");
-
-  .page {
-    padding: 10px;
-  }
 
   .sidebar--change {
     flex: 0 0 45%;
