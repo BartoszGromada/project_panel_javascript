@@ -244,34 +244,31 @@
     <div class="row">
       <form class="input-wrapper">
         <label for="description" class="input-wrapper__label input-wrapper__label--veritical">long description</label>
-        <textarea name="description" placeholder="Text" class=" input-wrapper__input"></textarea>
+        <textarea id="description" placeholder="Text" class=" input-wrapper__input"></textarea>
       </form>
     </div>
 
     <div class="row">
       <form class="input-wrapper">
         <label for="input" class="input-wrapper__label">single description</label>
-        <input name="input" placeholder="Input" type="text" class=" input-wrapper__input">
+        <input id="input" placeholder="Input" type="text" class=" input-wrapper__input">
       </form>
     </div>
 
     <div class="row">
       <form class="input-wrapper">
         <label for="password" class="input-wrapper__label">password</label>
-        <div class="add-border">
-          <i class="icon-password icons"></i>
-          <input name="password" placeholder="Password" type="password" class=" input-wrapper__input  input-wrapper__input--icons">
-        </div>
+        <input id="password" placeholder="Password" type="password" class=" input-wrapper__input  input-wrapper__input--icons">
       </form>
     </div>
 
     <div class="row">
       <form class="input-wrapper">
-        <label for="date" class="input-wrapper__label input-wrapper__label--veritical">date</label>
+        <label for="date_to" class="input-wrapper__label input-wrapper__label--veritical">date</label>
+        <label for="date_from" class="input-wrapper__label input-wrapper__label--veritical">date</label>
         <div class="add-border">
-          <input name="date" type="date" class=" input-wrapper__input  input-wrapper__input--icons">
-          <input name="date" type="date" class=" input-wrapper__input  input-wrapper__input--icons">
-          <i class="icon-calendar icons"></i>
+          <input id="date_to" type="date" class=" input-wrapper__input  input-wrapper__input--icons">
+          <input id="date_from" type="date" class=" input-wrapper__input  input-wrapper__input--icons">
         </div>
       </form>
     </div>
@@ -279,14 +276,14 @@
     <div class="row">
       <form class="input-wrapper">
         <label for="range" class="input-wrapper__label input-wrapper__label--veritical">range</label>
-        <input name="range" value="0" min="0" max="168" step="1" type="range" class=" input-wrapper__input">
+        <input id="range" value="0" min="0" max="168" step="1" type="range" class=" input-wrapper__input">
       </form>
     </div>
 
     <div class="row">
       <form class="input-wrapper">
         <label for="select" class="input-wrapper__label input-wrapper__label--veritical">Select</label>
-        <select name="select" class=" input-wrapper__input input-wrapper__option">
+        <select id="select" class=" input-wrapper__input input-wrapper__option">
           <option value="option1" class="input-wrapper__option">Option 1</option>
           <option value="option2" class="input-wrapper__option">Option 2</option>
           <option value="option3" class="input-wrapper__option">Option 3</option>
