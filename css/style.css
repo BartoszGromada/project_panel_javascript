@@ -945,6 +945,10 @@
     -ms-flex-order: -1;
         order: -1;
   }
+  .navigation {
+    position: absolute;
+    z-index: 999;
+  }
   .icons--menu {
     margin: 0 19px 0 10px;
   }
