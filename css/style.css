@@ -11,6 +11,7 @@
   display: flex;
   height: 100vh;
   transition: 1s linear;
+  position: relative;
 }
 
 .sidebar {
@@ -526,6 +527,10 @@
   color: #f58220;
 }
 
+.icons--margin {
+  margin: 5px;
+}
+
 .icons--menu {
   margin: 0 25px 0 10px;
 }
@@ -603,8 +608,7 @@
 }
 
 .list-icons {
-  margin: 10px;
-  text-align: right;
+  margin: 0;
   display: -ms-flexbox;
   display: flex;
   white-space: nowrap;
@@ -650,7 +654,7 @@
 
 .list__element--before {
   position: relative;
-  padding: 20px 10px;
+  padding: 20px;
 }
 
 .list__element--before::before {
@@ -941,9 +945,22 @@
 }
 
 @media (max-width: 320px) {
-  .container-section {
-    -ms-flex-order: -1;
-        order: -1;
+  .navigation {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+  }
+  .list-icons {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .link--list {
+    font-size: 12px;
+  }
+  .list__element--before {
+    padding: 10px;
   }
   .navigation {
     position: absolute;
@@ -973,9 +990,22 @@
 }
 
 @media (min-width: 321px) and (max-width: 408px) {
-  .container-section {
-    -ms-flex-order: -1;
-        order: -1;
+  .navigation {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+  }
+  .list-icons {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .link--list {
+    font-size: 14px;
+  }
+  .list__element--before {
+    padding: 15px;
   }
   .icons--menu {
     margin: 0 30px 0 13px;
@@ -1001,9 +1031,14 @@
 }
 
 @media (min-width: 409px) and (max-width: 415px) {
-  .container-section {
-    -ms-flex-order: -1;
-        order: -1;
+  .navigation {
+    position: absolute;
+    width: calc(100% + 16.66667%);
+    left: 0;
+    bottom: 0;
+  }
+  .list-icons {
+    max-width: 83.33333%;
   }
   .icons--menu {
     margin: 0 30px 0 16px;
@@ -1029,9 +1064,14 @@
 }
 
 @media (min-width: 416px) and (max-width: 478px) {
-  .container-section {
-    -ms-flex-order: -1;
-        order: -1;
+  .navigation {
+    position: absolute;
+    width: calc(100% + 16.66667%);
+    left: 0;
+    bottom: 0;
+  }
+  .list-icons {
+    max-width: 83.33333%;
   }
   .icons--menu {
     margin: 0 30px 0 13px;
@@ -1054,9 +1094,14 @@
 }
 
 @media (min-width: 479px) and (max-width: 481px) {
-  .container-section {
-    -ms-flex-order: -1;
-        order: -1;
+  .navigation {
+    position: absolute;
+    width: calc(100% + 16.66667%);
+    left: 0;
+    bottom: 0;
+  }
+  .list-icons {
+    max-width: 83.33333%;
   }
   .icons--menu {
     margin: 0 35px 0 20px;
@@ -1079,9 +1124,14 @@
 }
 
 @media (min-width: 482px) and (max-width: 566px) {
-  .container-section {
-    -ms-flex-order: -1;
-        order: -1;
+  .navigation {
+    position: absolute;
+    width: calc(100% + 16.66667%);
+    left: 0;
+    bottom: 0;
+  }
+  .list-icons {
+    max-width: 83.33333%;
   }
   .icons--menu {
     margin: 0 33px 0 10px;
