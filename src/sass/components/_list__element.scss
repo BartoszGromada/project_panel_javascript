@@ -32,7 +32,7 @@
 
 .list__element--before {
   position: relative;
-  padding: 20px 10px;
+  padding: 20px;
   &::before {
     @include after();
     height: 100%;
