@@ -1,7 +1,23 @@
 @media (max-width: 320px) {
 
-  .container-section {
-    order: -1;
+  .navigation {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+  }
+
+  .list-icons {
+    justify-content: center;
+  }
+
+  .link--list {
+    font-size: 12px;
+  }
+
+  .list__element--before {
+    padding: 10px;
   }
 
   .icons--menu {
@@ -35,8 +51,24 @@
 
 @media (min-width: 321px) and (max-width: 408px) {
 
-  .container-section {
-    order: -1;
+  .navigation {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+  }
+
+  .list-icons {
+    justify-content: center;
+  }
+
+  .link--list {
+    font-size: 14px;
+  }
+
+  .list__element--before {
+    padding: 15px;
   }
 
   .icons--menu {
@@ -70,8 +102,15 @@
 
 @media (min-width: 409px) and (max-width: 415px) {
 
-  .container-section {
-    order: -1;
+  .navigation {
+    position: absolute;
+    width: calc(100% + 16.66667%);
+    left: 0;
+    bottom: 0;
+  }
+  
+  .list-icons {
+    max-width: 83.33333%;
   }
 
   .icons--menu {
@@ -105,8 +144,15 @@
 
 @media (min-width: 416px) and (max-width: 478px) {
 
-  .container-section {
-    order: -1;
+  .navigation {
+    position: absolute;
+    width: calc(100% + 16.66667%);
+    left: 0;
+    bottom: 0;
+  }
+  
+  .list-icons {
+    max-width: 83.33333%;
   }
 
   .icons--menu {
@@ -136,8 +182,15 @@
 
 @media (min-width: 479px) and (max-width: 481px) {
 
-  .container-section {
-    order: -1;
+  .navigation {
+    position: absolute;
+    width: calc(100% + 16.66667%);
+    left: 0;
+    bottom: 0;
+  }
+  
+  .list-icons {
+    max-width: 83.33333%;
   }
 
   .icons--menu {
@@ -167,8 +220,15 @@
 
 @media (min-width: 482px) and (max-width: 566px) {
 
-  .container-section {
-    order: -1;
+  .navigation {
+    position: absolute;
+    width: calc(100% + 16.66667%);
+    left: 0;
+    bottom: 0;
+  }
+  
+  .list-icons {
+    max-width: 83.33333%;
   }
   
   .icons--menu {
