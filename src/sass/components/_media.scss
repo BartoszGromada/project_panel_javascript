@@ -8,6 +8,10 @@
     height: 40px;
   }
 
+  .container-section {
+    height: calc(100vh - 40px);
+  }
+
   .list-icons {
     justify-content: center;
   }
@@ -21,7 +25,7 @@
   }
 
   .icons--menu {
-    margin: 0 19px 0 10px;
+    margin: 0 19px 0 12px;
   }
 
   .fas--background::before {
@@ -56,7 +60,11 @@
     width: 100%;
     left: 0;
     bottom: 0;
-    height: 50px;
+    height: 40px;
+  }
+
+  .container-section {
+    height: calc(100vh - 40px);
   }
 
   .list-icons {
@@ -68,7 +76,7 @@
   }
 
   .list__element--before {
-    padding: 15px;
+    padding: 10px;
   }
 
   .icons--menu {
@@ -104,13 +112,22 @@
 
   .navigation {
     position: absolute;
-    width: calc(100% + 16.66667%);
+    width: 100%;
     left: 0;
     bottom: 0;
+    height: 48px;
+  }
+
+  .container-section {
+    height: calc(100vh - 48px);
   }
   
   .list-icons {
-    max-width: 83.33333%;
+    justify-content: center;
+  }
+
+  .list__element--before {
+    padding: 12px;
   }
 
   .icons--menu {
@@ -146,21 +163,21 @@
 
   .navigation {
     position: absolute;
-    width: calc(100% + 16.66667%);
+    width: 100%;
     left: 0;
     bottom: 0;
   }
   
   .list-icons {
-    max-width: 83.33333%;
+    justify-content: center;
   }
 
   .icons--menu {
-    margin: 0 30px 0 13px;
+    margin: 0 30px 0 15px;
   }
 
   .fas--background::before {
-    margin: 0 30px 0 3px;
+    margin: 0 30px 0 6px;
   }
 
   .table {
@@ -184,13 +201,13 @@
 
   .navigation {
     position: absolute;
-    width: calc(100% + 16.66667%);
+    width: 100%;
     left: 0;
     bottom: 0;
   }
   
   .list-icons {
-    max-width: 83.33333%;
+    justify-content: center;
   }
 
   .icons--menu {
@@ -222,13 +239,13 @@
 
   .navigation {
     position: absolute;
-    width: calc(100% + 16.66667%);
+    width: 100%;
     left: 0;
     bottom: 0;
   }
   
   .list-icons {
-    max-width: 83.33333%;
+    justify-content: center;
   }
   
   .icons--menu {
