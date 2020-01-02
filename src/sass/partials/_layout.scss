@@ -34,7 +34,6 @@
 .container-section {
   height: calc(100vh - #{$topbar-height});
   overflow-y: scroll;
-  padding: 1em;
   transition: 1s linear;
 }
 
