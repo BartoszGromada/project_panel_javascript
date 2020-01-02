@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 /* Colors */
-/* sizes */
-/* Fonts */
 * {
   box-sizing: border-box;
 }
@@ -43,7 +41,6 @@
 .container-section {
   height: calc(100vh - 60px);
   overflow-y: scroll;
-  padding: 1em;
   transition: 1s linear;
 }
 
@@ -952,6 +949,9 @@
     bottom: 0;
     height: 40px;
   }
+  .container-section {
+    height: calc(100vh - 40px);
+  }
   .list-icons {
     -ms-flex-pack: center;
         justify-content: center;
@@ -967,7 +967,7 @@
     z-index: 999;
   }
   .icons--menu {
-    margin: 0 19px 0 10px;
+    margin: 0 19px 0 12px;
   }
   .fas--background::before {
     margin: 0 19px 0 0;
@@ -995,7 +995,10 @@
     width: 100%;
     left: 0;
     bottom: 0;
-    height: 50px;
+    height: 40px;
+  }
+  .container-section {
+    height: calc(100vh - 40px);
   }
   .list-icons {
     -ms-flex-pack: center;
@@ -1005,7 +1008,7 @@
     font-size: 14px;
   }
   .list__element--before {
-    padding: 15px;
+    padding: 10px;
   }
   .icons--menu {
     margin: 0 30px 0 13px;
@@ -1033,12 +1036,20 @@
 @media (min-width: 409px) and (max-width: 415px) {
   .navigation {
     position: absolute;
-    width: calc(100% + 16.66667%);
+    width: 100%;
     left: 0;
     bottom: 0;
+    height: 48px;
+  }
+  .container-section {
+    height: calc(100vh - 48px);
   }
   .list-icons {
-    max-width: 83.33333%;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .list__element--before {
+    padding: 12px;
   }
   .icons--menu {
     margin: 0 30px 0 16px;
@@ -1066,18 +1077,19 @@
 @media (min-width: 416px) and (max-width: 478px) {
   .navigation {
     position: absolute;
-    width: calc(100% + 16.66667%);
+    width: 100%;
     left: 0;
     bottom: 0;
   }
   .list-icons {
-    max-width: 83.33333%;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .icons--menu {
-    margin: 0 30px 0 13px;
+    margin: 0 30px 0 15px;
   }
   .fas--background::before {
-    margin: 0 30px 0 3px;
+    margin: 0 30px 0 6px;
   }
   .table {
     margin: 10px 0;
@@ -1096,12 +1108,13 @@
 @media (min-width: 479px) and (max-width: 481px) {
   .navigation {
     position: absolute;
-    width: calc(100% + 16.66667%);
+    width: 100%;
     left: 0;
     bottom: 0;
   }
   .list-icons {
-    max-width: 83.33333%;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .icons--menu {
     margin: 0 35px 0 20px;
@@ -1126,12 +1139,13 @@
 @media (min-width: 482px) and (max-width: 566px) {
   .navigation {
     position: absolute;
-    width: calc(100% + 16.66667%);
+    width: 100%;
     left: 0;
     bottom: 0;
   }
   .list-icons {
-    max-width: 83.33333%;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .icons--menu {
     margin: 0 33px 0 10px;
@@ -1159,6 +1173,9 @@
   }
   .fas--background::before {
     margin: 0 30px 0 0;
+  }
+  .list__element--before {
+    padding: 20px 15px;
   }
 }
 
