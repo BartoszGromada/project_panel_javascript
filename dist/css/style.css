@@ -10,6 +10,7 @@
   height: 100vh;
   transition: 1s linear;
   position: relative;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar {
@@ -665,6 +666,33 @@
   left: 0;
 }
 
+.list__element--before-after {
+  position: relative;
+  padding: 20px;
+}
+
+.list__element--before-after::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #e3e3e3;
+  top: 0;
+  left: 0;
+}
+
+.list__element--before-after::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #e3e3e3;
+  top: 0;
+  right: 0;
+}
+
 .table-wrapper {
   overflow-x: auto;
   margin: 0 auto;
@@ -962,9 +990,8 @@
   .list__element--before {
     padding: 10px;
   }
-  .navigation {
-    position: absolute;
-    z-index: 999;
+  .list__element--before-after {
+    padding: 10px;
   }
   .icons--menu {
     margin: 0 19px 0 12px;
@@ -1010,6 +1037,9 @@
   .list__element--before {
     padding: 10px;
   }
+  .list__element--before-after {
+    padding: 10px;
+  }
   .icons--menu {
     margin: 0 30px 0 13px;
   }
@@ -1049,6 +1079,9 @@
         justify-content: center;
   }
   .list__element--before {
+    padding: 12px;
+  }
+  .list__element--before-after {
     padding: 12px;
   }
   .icons--menu {
@@ -1175,6 +1208,9 @@
     margin: 0 30px 0 0;
   }
   .list__element--before {
+    padding: 20px 15px;
+  }
+  .list__element--before-after {
     padding: 20px 15px;
   }
 }

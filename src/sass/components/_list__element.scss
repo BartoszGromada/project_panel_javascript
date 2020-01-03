@@ -42,3 +42,24 @@
     left: 0;
   }
 }
+
+.list__element--before-after {
+  position: relative;
+  padding: 20px;
+  &::before {
+    @include after();
+    height: 100%;
+    width: 1px;
+    background-color: $background-color;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    @include after();
+    height: 100%;
+    width: 1px;
+    background-color: $background-color;
+    top: 0;
+    right: 0;
+  }
+}

@@ -24,9 +24,8 @@
     padding: 10px;
   }
 
-  .navigation {
-    position: absolute;
-    z-index: 999;
+  .list__element--before-after {
+    padding: 10px;
   }
 
   .icons--menu {
@@ -84,6 +83,10 @@
     padding: 10px;
   }
 
+  .list__element--before-after {
+    padding: 10px;
+  }
+
   .icons--menu {
     margin: 0 30px 0 13px;
   }
@@ -132,6 +135,10 @@
   }
 
   .list__element--before {
+    padding: 12px;
+  }
+
+  .list__element--before-after {
     padding: 12px;
   }
 
@@ -288,6 +295,10 @@
   }
 
   .list__element--before {
+    padding: 20px 15px;
+  }
+
+  .list__element--before-after {
     padding: 20px 15px;
   }
 }
