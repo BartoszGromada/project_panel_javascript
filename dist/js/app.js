@@ -51,6 +51,7 @@ const app = {
     thisApp.hamburger.addEventListener('click', function(event) {
       event.preventdefault;
       thisApp.changeMenu();
+      thisApp.initChart();
     })
   },
   changeSection: function() {
