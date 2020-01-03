@@ -11,7 +11,6 @@ export const select = {
     section: 'data-section',
   },
   hamburger: '.fas--background',
-  containerMain: '.container-main',
   sidebar: '.sidebar',
   main: '.container-main',
 };

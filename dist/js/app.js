@@ -44,7 +44,6 @@ const app = {
       element.addEventListener('click', function(event) {
         event.preventdefault;
         thisApp.changeSection();
-        thisApp.initChart();
       });
     }
 
@@ -52,7 +51,6 @@ const app = {
     thisApp.hamburger.addEventListener('click', function(event) {
       event.preventdefault;
       thisApp.changeMenu();
-      thisApp.initChart();
     })
   },
   changeSection: function() {
