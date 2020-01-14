@@ -1,1 +1,1 @@
-Website: https://bartoszgromada.github.io/administrationPanel/
+Website: https://bartoszgromada.github.io/project_panel_javascript
